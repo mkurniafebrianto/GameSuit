@@ -7,6 +7,7 @@ class GameRules (
 ) {
     fun validate() {
         if (player1.equals(player2)) {
+            println(" ")
             println("Hasil:")
             println("DRAW!")
         } else if (player1.equals("batu")) {
@@ -45,10 +46,12 @@ class GameRules (
     fun finalResult(result: Boolean) {
         when (result) {
             true -> {
+                println(" ")
                 println("Hasil:")
                 println("Pemain 1 MENANG!")
             }
             else -> {
+                println(" ")
                 println("Hasil:")
                 println("Pemain 2 MENANG!")
             }
